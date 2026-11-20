@@ -1,0 +1,42 @@
+{
+    "name": "@nyar/jvm-linux-x64",
+    "version": "0.1.0",
+    "description": "JVM native collect - Linux x64 (Node-API host)",
+    "type": "module",
+    "license": "MIT",
+    "os": [
+        "linux"
+    ],
+    "cpu": [
+        "x64"
+    ],
+    "main": "./index.mjs",
+    "exports": {
+        ".": "./index.mjs",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "index.mjs",
+        "lib",
+        "readme.md",
+        "README.md"
+    ],
+    "engines": {
+        "node": ">=20"
+    },
+    "keywords": [
+        "jvm",
+        "native",
+        "node-api",
+        "linux",
+        "x64"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nyar-vm/jvm.git",
+        "directory": "projects/ts/platforms/jvm-linux-x64"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

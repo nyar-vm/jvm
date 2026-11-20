@@ -1,0 +1,5 @@
+lib/
+*.node
+jvm_napi.dll
+libjvm_napi.so
+libjvm_napi.dylib

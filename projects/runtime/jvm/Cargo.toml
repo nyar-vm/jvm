@@ -1,0 +1,19 @@
+[package]
+name = "jvm"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "JVM artifact and execution facade — re-exports the class/jar format model and the slot-accurate execution substrate"
+
+# Crate and library share the name `jvm`; that is the intended facade identity.
+[lib]
+name = "jvm"
+path = "src/lib.rs"
+
+[dependencies]
+data-binary-jvm = { workspace = true }
+interpreter-vm-jvm = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
